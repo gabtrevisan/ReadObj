@@ -16,6 +16,7 @@ public:
 	vector<float> textures;
 
 	Group() {
+		Material material = Material();
 	}
 
 	Group(Material material) {

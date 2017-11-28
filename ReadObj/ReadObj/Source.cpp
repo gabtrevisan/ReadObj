@@ -39,6 +39,9 @@ const GLuint WIDTH = 800, HEIGHT = 600;
 float camX = 0.0f, camY = 0.0f, camZ = -5.0f;
 float posX = 0.0f, posY = 0.0f, posZ = 0.0f;
 float lightX = 0.0f, lightY = 0.0f, lightZ = 0.0f;
+float lightAmbX = 0.0f, lightAmbY = 0.0f, lightAmbZ = 0.0f;
+float lightDifX = 0.0f, lightDifY = 0.0f, lightDifZ = 0.0f;
+float lightSpecX = 0.0f, lightSpecY = 0.0f, lightSpecZ = 0.0f;
 float bgColorR = 1.0f, bgColorG = 1.0f, bgColorB = 1.0f;
 float scl = 1.0f;
 float rot = 0.0f;
@@ -82,6 +85,18 @@ int main()
 	lightX = scene.getLightX();
 	lightY = scene.getLightY();
 	lightZ = scene.getLightZ();
+
+	lightAmbX = scene.getLightAmbX();
+	lightAmbY = scene.getLightAmbY();
+	lightAmbZ = scene.getLightAmbZ();
+
+	lightDifX = scene.getLightDifX();
+	lightDifY = scene.getLightDifY();
+	lightDifZ = scene.getLightDifZ();
+
+	lightSpecX = scene.getLightSpecX();
+	lightSpecY = scene.getLightSpecY();
+	lightSpecZ = scene.getLightSpecZ();
 
 	bgColorR = scene.getBgColorR();
 	bgColorG = scene.getBgColorG();
@@ -178,15 +193,25 @@ int main()
 		
 		// Use cooresponding shader when setting uniforms/drawing objects
 		ourShader.Use();
-		GLint objectColorLoc = glGetUniformLocation(ourShader.Program, "objectColor");
-		GLint lightColorLoc = glGetUniformLocation(ourShader.Program, "lightColor");
-		GLint lightPosLoc = glGetUniformLocation(ourShader.Program, "lightPos");
+
 		GLint viewPosLoc = glGetUniformLocation(ourShader.Program, "viewPos");
-		glUniform3f(objectColorLoc, 1.0f, 1.0f, 0.31f);
-		glUniform3f(lightColorLoc, 1.0f, 1.0f, 1.0f);
-		glUniform3f(lightPosLoc, lightX, lightY, lightZ);
-		glUniform3f(viewPosLoc, camX, camY, camZ);
+
+		GLint lightPosLoc = glGetUniformLocation(ourShader.Program, "lightPos");
+		GLint lightAmbientLoc = glGetUniformLocation(ourShader.Program, "lightAmbient");
+		GLint lightDiffuseLoc = glGetUniformLocation(ourShader.Program, "lightDiffuse");
+		GLint lightSpecularLoc = glGetUniformLocation(ourShader.Program, "lightSpecular");
+
+		GLint ambient = glGetUniformLocation(ourShader.Program, "matAmbient");
+		GLint diffuse = glGetUniformLocation(ourShader.Program, "matDiffuse");
+		GLint specular = glGetUniformLocation(ourShader.Program, "matSpecular");
 		
+		glUniform3f(lightPosLoc, lightX, lightY, lightZ);
+		glUniform3f(lightAmbientLoc, lightAmbX, lightAmbY, lightAmbZ);
+		glUniform3f(lightDiffuseLoc, lightDifX, lightDifY, lightDifZ);
+		glUniform3f(lightSpecularLoc, lightSpecX, lightSpecY, lightSpecZ);
+
+		glUniform3f(viewPosLoc, camX, camY, camZ);
+
 		// create transformations
 		glm::mat4 view;
 		view = glm::translate(view, glm::vec3(camX, camY, camZ));
@@ -220,13 +245,19 @@ int main()
 			model = glm::translate(model, glm::vec3(posX, posY, posZ));
 			model = glm::rotate(model, rot, glm::vec3(x, y, z));
 			model = glm::scale(model, glm::vec3(scl));
-			glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));	
+			glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 
 			for (int i = 0; i < obj.getGroups()->size(); i++) {
 				if (obj.getGroups()->at(i).indicesVT.size() > 0) {
 					texturePath = "../objs/" + obj.getGroups()->at(i).material.getMapKd();
 					texture = LoadTexture(texturePath.c_str());
 					glBindTexture(GL_TEXTURE_2D, texture);
+				}
+
+				if (obj.getGroups()->at(i).material.getName() != "") {
+					glUniform3f(ambient, obj.getGroups()->at(i).material.getKaX(), obj.getGroups()->at(i).material.getKaY(), obj.getGroups()->at(i).material.getKaZ());
+					glUniform3f(diffuse, obj.getGroups()->at(i).material.getKdX(), obj.getGroups()->at(i).material.getKdY(), obj.getGroups()->at(i).material.getKdZ());
+					glUniform3f(specular, obj.getGroups()->at(i).material.getKsX(), obj.getGroups()->at(i).material.getKsY(), obj.getGroups()->at(i).material.getKsZ());
 				}
 
 				glBindVertexArray(VAO[v]);
