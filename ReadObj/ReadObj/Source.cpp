@@ -36,7 +36,12 @@ GLuint LoadTexture(const char* file);
 // Window dimensions
 const GLuint WIDTH = 800, HEIGHT = 600;
 
-float camX = 0.0f, camY = 0.0f, camZ = -5.0f, posX = 0.0f, posY = 0.0f, posZ = 0.0f, scl = 1.0f, rot = 0.0f;
+float camX = 0.0f, camY = 0.0f, camZ = -5.0f;
+float posX = 0.0f, posY = 0.0f, posZ = 0.0f;
+float lightX = 0.0f, lightY = 0.0f, lightZ = 0.0f;
+float bgColorR = 1.0f, bgColorG = 1.0f, bgColorB = 1.0f;
+float scl = 1.0f;
+float rot = 0.0f;
 int x = 0, y = 0, z = 0;
 
 // The MAIN function, from here we start the application and run the game loop
@@ -73,6 +78,14 @@ int main()
 	camX = scene.getCamX();
 	camY = scene.getCamY();
 	camZ = scene.getCamZ();
+
+	lightX = scene.getLightX();
+	lightY = scene.getLightY();
+	lightZ = scene.getLightZ();
+
+	bgColorR = scene.getBgColorR();
+	bgColorG = scene.getBgColorG();
+	bgColorB = scene.getBgColorB();
 
 	int numVAOs = 0;
 
@@ -139,7 +152,6 @@ int main()
 		}	
 	}
 
-
 	// note that this is allowed, the call to glVertexAttribPointer registered VBO as the vertex attribute's bound vertex buffer object so afterwards we can safely unbind
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
@@ -161,7 +173,7 @@ int main()
 
 		// Render
 		// Clear the colorbuffer
-		glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+		glClearColor(bgColorR, bgColorG, bgColorB, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		
 		// Use cooresponding shader when setting uniforms/drawing objects
@@ -172,7 +184,7 @@ int main()
 		GLint viewPosLoc = glGetUniformLocation(ourShader.Program, "viewPos");
 		glUniform3f(objectColorLoc, 1.0f, 1.0f, 0.31f);
 		glUniform3f(lightColorLoc, 1.0f, 1.0f, 1.0f);
-		glUniform3f(lightPosLoc, scene.getLightX(), scene.getLightY(), scene.getLightZ());
+		glUniform3f(lightPosLoc, lightX, lightY, lightZ);
 		glUniform3f(viewPosLoc, camX, camY, camZ);
 		
 		// create transformations

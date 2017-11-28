@@ -13,7 +13,7 @@ private:
 	vector<Object> objects;
 	vector<float> vertices;
 	vector<int> indices;
-	float camX = 0.0f, camY = 0.0f, camZ = 0.0f, lightX = 0.0f, lightY = 0.0f, lightZ = 0.0f;
+	float camX = 0.0f, camY = 0.0f, camZ = 0.0f, lightX = 0.0f, lightY = 0.0f, lightZ = 0.0f, bgColorR = 1.0f, bgColorG = 1.0f, bgColorB = 1.0f;
 
 	vector<string> split(const string& str, const string& delim)
 	{
@@ -55,6 +55,8 @@ public:
 						this->setCamPos(stof(tokens[1]), stof(tokens[2]), stof(tokens[3]));
 					else if (tokens[0] == "light") // Light position
 						this->setLightPos(stof(tokens[1]), stof(tokens[2]), stof(tokens[3]));
+					else if (tokens[0] == "bgcolor") // Background color
+						this->setBgColor(stof(tokens[1]), stof(tokens[2]), stof(tokens[3]));
 
 				}
 			}
@@ -98,6 +100,12 @@ public:
 		this->lightZ = z;
 	}
 
+	void setBgColor(float r, float g, float b) {
+		this->bgColorR = r;
+		this->bgColorG = g;
+		this->bgColorB = b;
+	}
+
 	float getLightX() {
 		return this->lightX;
 	}
@@ -109,4 +117,17 @@ public:
 	float getLightZ() {
 		return this->lightZ;
 	}
+
+	float getBgColorR() {
+		return this->bgColorR;
+	}
+
+	float getBgColorG() {
+		return this->bgColorG;
+	}
+
+	float getBgColorB() {
+		return this->bgColorB;
+	}
+
 };

@@ -1,24 +1,24 @@
 ﻿  Source.cpp
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\mtllib.h(63): warning C4244: 'initializing': conversion from 'std::streamoff' to 'long', possible loss of data
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\mtllib.h(68): warning C4018: '<': signed/unsigned mismatch
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\obj.h(27): warning C4018: '<': signed/unsigned mismatch
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\obj.h(29): warning C4018: '<': signed/unsigned mismatch
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\obj.h(83): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\obj.h(85): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\obj.h(87): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\obj.h(153): warning C4244: 'initializing': conversion from 'std::streamoff' to 'long', possible loss of data
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\scene.h(61): warning C4244: 'initializing': conversion from 'std::streamoff' to 'long', possible loss of data
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\source.cpp(79): warning C4018: '<': signed/unsigned mismatch
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\source.cpp(93): warning C4018: '<': signed/unsigned mismatch
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\source.cpp(98): warning C4018: '<': signed/unsigned mismatch
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\source.cpp(192): warning C4018: '<': signed/unsigned mismatch
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\source.cpp(213): warning C4018: '<': signed/unsigned mismatch
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\source.cpp(265): warning C4305: '+=': truncation from 'double' to 'float'
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\source.cpp(268): warning C4305: '-=': truncation from 'double' to 'float'
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\source.cpp(271): warning C4305: '-=': truncation from 'double' to 'float'
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\source.cpp(274): warning C4305: '+=': truncation from 'double' to 'float'
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\source.cpp(277): warning C4305: '+=': truncation from 'double' to 'float'
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\source.cpp(280): warning C4305: '-=': truncation from 'double' to 'float'
-c:\users\gabriela\documents\visual studio 2015\projects\teste\readobj\readobj\mtllib.h(72): warning C4715: 'Mtllib::getMaterialByName': not all control paths return a value
-  ReadObj.vcxproj -> C:\Users\Gabriela\Documents\Visual Studio 2015\Projects\Teste\ReadObj\Debug\ReadObj.exe
-  ReadObj.vcxproj -> C:\Users\Gabriela\Documents\Visual Studio 2015\Projects\Teste\ReadObj\Debug\ReadObj.pdb (Full PDB)
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\mtllib.h(63): warning C4244: 'initializing': conversion from 'std::streamoff' to 'long', possible loss of data
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\mtllib.h(68): warning C4018: '<': signed/unsigned mismatch
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\obj.h(27): warning C4018: '<': signed/unsigned mismatch
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\obj.h(29): warning C4018: '<': signed/unsigned mismatch
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\obj.h(83): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\obj.h(85): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\obj.h(87): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\obj.h(153): warning C4244: 'initializing': conversion from 'std::streamoff' to 'long', possible loss of data
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\scene.h(63): warning C4244: 'initializing': conversion from 'std::streamoff' to 'long', possible loss of data
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp(92): warning C4018: '<': signed/unsigned mismatch
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp(106): warning C4018: '<': signed/unsigned mismatch
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp(111): warning C4018: '<': signed/unsigned mismatch
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp(204): warning C4018: '<': signed/unsigned mismatch
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp(225): warning C4018: '<': signed/unsigned mismatch
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp(277): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp(280): warning C4305: '-=': truncation from 'double' to 'float'
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp(283): warning C4305: '-=': truncation from 'double' to 'float'
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp(286): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp(289): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp(292): warning C4305: '-=': truncation from 'double' to 'float'
+c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\mtllib.h(72): warning C4715: 'Mtllib::getMaterialByName': not all control paths return a value
+  ReadObj.vcxproj -> C:\Users\Gabriela\Documents\Visual Studio 2015\Projects\TGB\ReadObj\ReadObj\Debug\ReadObj.exe
+  ReadObj.vcxproj -> C:\Users\Gabriela\Documents\Visual Studio 2015\Projects\TGB\ReadObj\ReadObj\Debug\ReadObj.pdb (Full PDB)
