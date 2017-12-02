@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+      <FILENAME>source.cpp</FILENAME>
+      <LINE>137</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'i' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '132' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>59</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>132</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+      <FILENAME>source.cpp</FILENAME>
+      <LINE>272</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'i' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '251' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>59</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>251</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>549</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::clamp</FUNCTION>
+    <DECORATED>??$clamp@M$0A@Utvec2@glm@@@glm@@YA?AU?$tvec2@M$0A@@0@ABU10@MM@Z</DECORATED>
+    <FUNCLINE>549</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>359</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::round</FUNCTION>
+    <DECORATED>??$round@M$0A@Utvec2@glm@@@glm@@YA?AU?$tvec2@M$0A@@0@ABU10@@Z</DECORATED>
+    <FUNCLINE>359</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>549</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::clamp</FUNCTION>
+    <DECORATED>??$clamp@M$0A@Utvec4@glm@@@glm@@YA?AU?$tvec4@M$0A@@0@ABU10@MM@Z</DECORATED>
+    <FUNCLINE>549</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>359</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::round</FUNCTION>
+    <DECORATED>??$round@M$0A@Utvec4@glm@@@glm@@YA?AU?$tvec4@M$0A@@0@ABU10@@Z</DECORATED>
+    <FUNCLINE>359</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_geometric.inl</FILENAME>
+      <LINE>194</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::normalize</FUNCTION>
+    <DECORATED>??$normalize@M$0A@Utvec3@glm@@@glm@@YA?AU?$tvec3@M$0A@@0@ABU10@@Z</DECORATED>
+    <FUNCLINE>194</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_geometric.inl</FILENAME>
+      <LINE>179</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::cross</FUNCTION>
+    <DECORATED>??$cross@M$0A@@glm@@YA?AU?$tvec3@M$0A@@0@ABU10@0@Z</DECORATED>
+    <FUNCLINE>179</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_geometric.inl</FILENAME>
+      <LINE>179</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'y' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::cross</FUNCTION>
+    <DECORATED>??$cross@M$0A@@glm@@YA?AU?$tvec3@M$0A@@0@ABU10@0@Z</DECORATED>
+    <FUNCLINE>179</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_geometric.inl</FILENAME>
+      <LINE>76</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_cross&lt;float,0,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_cross@M$0A@$0A@@detail@glm@@SA?AU?$tvec3@M$0A@@3@ABU43@0@Z</DECORATED>
+    <FUNCLINE>76</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_geometric.inl</FILENAME>
+      <LINE>76</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'y' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_cross&lt;float,0,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_cross@M$0A@$0A@@detail@glm@@SA?AU?$tvec3@M$0A@@3@ABU43@0@Z</DECORATED>
+    <FUNCLINE>76</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>244</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_round&lt;float,0,glm::tvec4,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_round@M$0A@Utvec4@glm@@$0A@@detail@glm@@SA?AU?$tvec4@M$0A@@3@ABU43@@Z</DECORATED>
+    <FUNCLINE>244</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>281</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_clamp_vector&lt;float,0,glm::tvec4,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_clamp_vector@M$0A@Utvec4@glm@@$0A@@detail@glm@@SA?AU?$tvec4@M$0A@@3@ABU43@00@Z</DECORATED>
+    <FUNCLINE>281</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>244</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_round&lt;float,0,glm::tvec2,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_round@M$0A@Utvec2@glm@@$0A@@detail@glm@@SA?AU?$tvec2@M$0A@@3@ABU43@@Z</DECORATED>
+    <FUNCLINE>244</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>281</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_clamp_vector&lt;float,0,glm::tvec2,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_clamp_vector@M$0A@Utvec2@glm@@$0A@@detail@glm@@SA?AU?$tvec2@M$0A@@3@ABU43@00@Z</DECORATED>
+    <FUNCLINE>281</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_geometric.inl</FILENAME>
+      <LINE>171</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::dot</FUNCTION>
+    <DECORATED>??$dot@M$0A@Utvec3@glm@@@glm@@YAMABU?$tvec3@M$0A@@0@0@Z</DECORATED>
+    <FUNCLINE>171</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_geometric.inl</FILENAME>
+      <LINE>171</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'y' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::dot</FUNCTION>
+    <DECORATED>??$dot@M$0A@Utvec3@glm@@@glm@@YAMABU?$tvec3@M$0A@@0@0@Z</DECORATED>
+    <FUNCLINE>171</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_exponential.inl</FILENAME>
+      <LINE>130</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::inversesqrt</FUNCTION>
+    <DECORATED>??$inversesqrt@M@glm@@YAMM@Z</DECORATED>
+    <FUNCLINE>130</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>263</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_min_vector&lt;float,0,glm::tvec2,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_min_vector@M$0A@Utvec2@glm@@$0A@@detail@glm@@SA?AU?$tvec2@M$0A@@3@ABU43@0@Z</DECORATED>
+    <FUNCLINE>263</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>263</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'y' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_min_vector&lt;float,0,glm::tvec2,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_min_vector@M$0A@Utvec2@glm@@$0A@@detail@glm@@SA?AU?$tvec2@M$0A@@3@ABU43@0@Z</DECORATED>
+    <FUNCLINE>263</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>272</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_max_vector&lt;float,0,glm::tvec2,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_max_vector@M$0A@Utvec2@glm@@$0A@@detail@glm@@SA?AU?$tvec2@M$0A@@3@ABU43@0@Z</DECORATED>
+    <FUNCLINE>272</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>272</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'y' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_max_vector&lt;float,0,glm::tvec2,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_max_vector@M$0A@Utvec2@glm@@$0A@@detail@glm@@SA?AU?$tvec2@M$0A@@3@ABU43@0@Z</DECORATED>
+    <FUNCLINE>272</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>263</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_min_vector&lt;float,0,glm::tvec4,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_min_vector@M$0A@Utvec4@glm@@$0A@@detail@glm@@SA?AU?$tvec4@M$0A@@3@ABU43@0@Z</DECORATED>
+    <FUNCLINE>263</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>263</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'y' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_min_vector&lt;float,0,glm::tvec4,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_min_vector@M$0A@Utvec4@glm@@$0A@@detail@glm@@SA?AU?$tvec4@M$0A@@3@ABU43@0@Z</DECORATED>
+    <FUNCLINE>263</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>272</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_max_vector&lt;float,0,glm::tvec4,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_max_vector@M$0A@Utvec4@glm@@$0A@@detail@glm@@SA?AU?$tvec4@M$0A@@3@ABU43@0@Z</DECORATED>
+    <FUNCLINE>272</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>272</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'y' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_max_vector&lt;float,0,glm::tvec4,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_max_vector@M$0A@Utvec4@glm@@$0A@@detail@glm@@SA?AU?$tvec4@M$0A@@3@ABU43@0@Z</DECORATED>
+    <FUNCLINE>272</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_geometric.inl</FILENAME>
+      <LINE>56</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_dot&lt;glm::tvec3,float,0,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_dot@Utvec3@glm@@M$0A@$0A@@detail@glm@@SAMABU?$tvec3@M$0A@@3@0@Z</DECORATED>
+    <FUNCLINE>56</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_geometric.inl</FILENAME>
+      <LINE>56</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'y' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_dot&lt;glm::tvec3,float,0,0&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_dot@Utvec3@glm@@M$0A@$0A@@detail@glm@@SAMABU?$tvec3@M$0A@@3@0@Z</DECORATED>
+    <FUNCLINE>56</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>309</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::abs</FUNCTION>
+    <DECORATED>??$abs@M@glm@@YAMM@Z</DECORATED>
+    <FUNCLINE>309</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::min</FUNCTION>
+    <DECORATED>??$min@M@glm@@YAMMM@Z</DECORATED>
+    <FUNCLINE>15</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'y' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::min</FUNCTION>
+    <DECORATED>??$min@M@glm@@YAMMM@Z</DECORATED>
+    <FUNCLINE>15</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::max</FUNCTION>
+    <DECORATED>??$max@M@glm@@YAMMM@Z</DECORATED>
+    <FUNCLINE>23</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'y' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::max</FUNCTION>
+    <DECORATED>??$max@M@glm@@YAMMM@Z</DECORATED>
+    <FUNCLINE>23</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\dependencies\glm\glm\detail\</FILEPATH>
+      <FILENAME>func_common.inl</FILENAME>
+      <LINE>76</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6244</DEFECTCODE>
+    <DESCRIPTION>Local declaration of 'x' hides previous declaration at line '56' of 'c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\source.cpp'.</DESCRIPTION>
+    <FUNCTION>glm::detail::compute_abs&lt;float,1&gt;::call</FUNCTION>
+    <DECORATED>?call@?$compute_abs@M$00@detail@glm@@SAMM@Z</DECORATED>
+    <FUNCLINE>76</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\gabriela\documents\visual studio 2015\projects\tgb\readobj\readobj\readobj\</FILEPATH>
+        <FILENAME>source.cpp</FILENAME>
+        <LINE>56</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

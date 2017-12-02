@@ -148,6 +148,7 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Group.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Mtllib.h" />

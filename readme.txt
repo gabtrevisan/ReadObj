@@ -15,15 +15,15 @@ bgcolor <r> <g> <b>: cor de fundo da cena
  
 * se houver, arquivo .mtl e imagens de textura devem estar localizados no mesmo diretório do obj
 
-Câmera controlada apenas por teclado
-
 Controles:
 
-ESC: Fecha janela
+ESC: Fecha a janela
 
-LEFT: Move a câmera no eixo X (esquerda)
-RIGHT: Move a câmera no eixo X (direita)
-UP: Move a câmera no eixo Y (cima)
-DOWN: Move a câmera no eixo Y (baixo)
-+: Move a câmera no eixo Z (frente)
--: Move a câmera no eixo Z (trás)
+A: translação para a esquerda em relação a posição da câmera
+D: translação para a direita em relação a posição da câmera
+W: desloca a câmera para frente
+S: desloca a câmera para trás
+
+Scroll do mouse controla o deslocamento frente/trás da câmera
+
+Mouse controla a direção da câmera

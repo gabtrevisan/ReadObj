@@ -24,25 +24,33 @@ using namespace std;
 // SOIL 
 #include <SOIL.h>
 
-// Class from https://learnopengl.com/#!Getting-started/Shaders
+// Classes from https://learnopengl.com/
 #include "Shader.h"
+#include "Camera.h"
 
 // Read Obj file
 #include "Scene.h"
 
 // Function prototypes
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
+void mouse_callback(GLFWwindow* window, double xpos, double ypos);
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+void do_movement();
 GLuint LoadTexture(const char* file);
+
 // Window dimensions
 const GLuint WIDTH = 800, HEIGHT = 600;
 
-float camX = 0.0f, camY = 0.0f, camZ = -5.0f;
+Camera camera(glm::vec3(0.0f, 0.0f, 0.0f));
+float lastX = WIDTH / 2.0f;
+float lastY = HEIGHT / 2.0f;
+bool    keys[1024];
+
+// timing
+float deltaTime = 0.0f;
+float lastFrame = 0.0f;
+
 float posX = 0.0f, posY = 0.0f, posZ = 0.0f;
-float lightX = 0.0f, lightY = 0.0f, lightZ = 0.0f;
-float lightAmbX = 0.0f, lightAmbY = 0.0f, lightAmbZ = 0.0f;
-float lightDifX = 0.0f, lightDifY = 0.0f, lightDifZ = 0.0f;
-float lightSpecX = 0.0f, lightSpecY = 0.0f, lightSpecZ = 0.0f;
-float bgColorR = 1.0f, bgColorG = 1.0f, bgColorB = 1.0f;
 float scl = 1.0f;
 float rot = 0.0f;
 int x = 0, y = 0, z = 0;
@@ -59,6 +67,11 @@ int main()
 
 	// Set the required callback functions
 	glfwSetKeyCallback(window, key_callback);
+	glfwSetCursorPosCallback(window, mouse_callback);
+	glfwSetScrollCallback(window, scroll_callback);
+
+	// GLFW Options
+	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
 	// Set this to true so GLEW knows to use a modern approach to retrieving function pointers and extensions
 	glewExperimental = GL_TRUE;
@@ -78,29 +91,27 @@ int main()
 
 	Scene scene("../../scene.txt");
 
-	camX = scene.getCamX();
-	camY = scene.getCamY();
-	camZ = scene.getCamZ();
+	camera.Position = scene.getCamPos();
 
-	lightX = scene.getLightX();
-	lightY = scene.getLightY();
-	lightZ = scene.getLightZ();
+	float lightX = scene.getLightX();
+	float lightY = scene.getLightY();
+	float lightZ = scene.getLightZ();
 
-	lightAmbX = scene.getLightAmbX();
-	lightAmbY = scene.getLightAmbY();
-	lightAmbZ = scene.getLightAmbZ();
+	float lightAmbX = scene.getLightAmbX();
+	float lightAmbY = scene.getLightAmbY();
+	float lightAmbZ = scene.getLightAmbZ();
 
-	lightDifX = scene.getLightDifX();
-	lightDifY = scene.getLightDifY();
-	lightDifZ = scene.getLightDifZ();
+	float lightDifX = scene.getLightDifX();
+	float lightDifY = scene.getLightDifY();
+	float lightDifZ = scene.getLightDifZ();
 
-	lightSpecX = scene.getLightSpecX();
-	lightSpecY = scene.getLightSpecY();
-	lightSpecZ = scene.getLightSpecZ();
+	float lightSpecX = scene.getLightSpecX();
+	float lightSpecY = scene.getLightSpecY();
+	float lightSpecZ = scene.getLightSpecZ();
 
-	bgColorR = scene.getBgColorR();
-	bgColorG = scene.getBgColorG();
-	bgColorB = scene.getBgColorB();
+	float bgColorR = scene.getBgColorR();
+	float bgColorG = scene.getBgColorG();
+	float bgColorB = scene.getBgColorB();
 
 	int numVAOs = 0;
 
@@ -180,11 +191,18 @@ int main()
 	GLuint texture;
 	string texturePath;
 
+
 	// Game loop
 	while (!glfwWindowShouldClose(window))
 	{
+		// Calculate deltatime of current frame
+		float currentFrame = glfwGetTime();
+		deltaTime = currentFrame - lastFrame;
+		lastFrame = currentFrame;
+
 		// Check if any events have been activiated (key pressed, mouse moved etc.) and call corresponding response functions
 		glfwPollEvents();
+		do_movement();
 
 		// Render
 		// Clear the colorbuffer
@@ -201,21 +219,24 @@ int main()
 		GLint lightDiffuseLoc = glGetUniformLocation(ourShader.Program, "lightDiffuse");
 		GLint lightSpecularLoc = glGetUniformLocation(ourShader.Program, "lightSpecular");
 
+		GLint coefSpecLoc = glGetUniformLocation(ourShader.Program, "coefSpec");
+
 		GLint ambient = glGetUniformLocation(ourShader.Program, "matAmbient");
 		GLint diffuse = glGetUniformLocation(ourShader.Program, "matDiffuse");
 		GLint specular = glGetUniformLocation(ourShader.Program, "matSpecular");
+
 		
 		glUniform3f(lightPosLoc, lightX, lightY, lightZ);
 		glUniform3f(lightAmbientLoc, lightAmbX, lightAmbY, lightAmbZ);
 		glUniform3f(lightDiffuseLoc, lightDifX, lightDifY, lightDifZ);
 		glUniform3f(lightSpecularLoc, lightSpecX, lightSpecY, lightSpecZ);
-
-		glUniform3f(viewPosLoc, camX, camY, camZ);
+		glUniform1f(coefSpecLoc, scene.getCoefSpec());
+		
+		glUniform3f(viewPosLoc, camera.Position.x, camera.Position.y, camera.Position.z);
 
 		// create transformations
-		glm::mat4 view;
-		view = glm::translate(view, glm::vec3(camX, camY, camZ));
-		glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)WIDTH / (float)HEIGHT, 0.1f, 100.0f);		
+		glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)WIDTH / (float)HEIGHT, 0.1f, 100.0f);		
+		glm::mat4 view = camera.GetViewMatrix();
 		// Get their uniform location
 		GLint modelLoc = glGetUniformLocation(ourShader.Program, "model");
 		GLint viewLoc = glGetUniformLocation(ourShader.Program, "view");
@@ -225,6 +246,7 @@ int main()
 		// Note: currently we set the projection matrix each frame, but since the projection
 		// matrix rarely changes it's often best practice to set it outside the main loop only once.
 		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+		
 		v = 0;
 		for (int i = 0; i < scene.getObjects().size(); i++)
 		{
@@ -300,25 +322,50 @@ GLuint LoadTexture(const char* file)
 // Is called whenever a key is pressed/released via GLFW
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
-	// Close Window
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, GL_TRUE);
-	// Move Cam Left
-	if (key == GLFW_KEY_LEFT && (action == GLFW_PRESS || action == GLFW_REPEAT))
-		camX += 0.1;
-	// Move Cam Right
-	if (key == GLFW_KEY_RIGHT && (action == GLFW_PRESS || action == GLFW_REPEAT))
-		camX -= 0.1;
-	// Move Cam UP
-	if (key == GLFW_KEY_UP && (action == GLFW_PRESS || action == GLFW_REPEAT))
-		camY -= 0.1;
-	// Move Cam DOWN
-	if (key == GLFW_KEY_DOWN && (action == GLFW_PRESS || action == GLFW_REPEAT))
-		camY += 0.1;
-	// ZOOM IN
-	if (key == GLFW_KEY_EQUAL && (action == GLFW_PRESS || action == GLFW_REPEAT))
-		camZ += 0.1;
-	// ZOOM OUT 
-	if (key == GLFW_KEY_MINUS && (action == GLFW_PRESS || action == GLFW_REPEAT)) 
-		camZ -= 0.1;
+	if (key >= 0 && key < 1024)
+	{
+		if (action == GLFW_PRESS)
+			keys[key] = true;
+		else if (action == GLFW_RELEASE)
+			keys[key] = false;
+	}
+}
+
+void do_movement()
+{
+	// Camera controls
+	if (keys[GLFW_KEY_W])
+		camera.ProcessKeyboard(FORWARD, deltaTime);
+	if (keys[GLFW_KEY_S])
+		camera.ProcessKeyboard(BACKWARD, deltaTime);
+	if (keys[GLFW_KEY_A])
+		camera.ProcessKeyboard(LEFT, deltaTime);
+	if (keys[GLFW_KEY_D])
+		camera.ProcessKeyboard(RIGHT, deltaTime);
+}
+
+bool firstMouse = true;
+void mouse_callback(GLFWwindow* window, double xpos, double ypos)
+{
+	if (firstMouse)
+	{
+		lastX = xpos;
+		lastY = ypos;
+		firstMouse = false;
+	}
+
+	GLfloat xoffset = xpos - lastX;
+	GLfloat yoffset = lastY - ypos;  // Reversed since y-coordinates go from bottom to left
+
+	lastX = xpos;
+	lastY = ypos;
+
+	camera.ProcessMouseMovement(xoffset, yoffset);
+}
+
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
+{
+	camera.ProcessMouseScroll(yoffset);
 }

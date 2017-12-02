@@ -13,7 +13,7 @@ private:
 	vector<Object> objects;
 	vector<float> vertices;
 	vector<int> indices;
-	float camX = 0.0f, camY = 0.0f, camZ = 0.0f, lightX = 0.0f, lightY = 0.0f, lightZ = 0.0f, lightAmbX = 0.0f, lightAmbY = 0.0f, lightAmbZ = 0.0f, lightDifX = 0.0f, lightDifY = 0.0f, lightDifZ = 0.0f, lightSpecX = 0.0f, lightSpecY = 0.0f, lightSpecZ = 0.0f, bgColorR = 1.0f, bgColorG = 1.0f, bgColorB = 1.0f;
+	float camX = 0.0f, camY = 0.0f, camZ = 0.0f, lightX = 0.0f, lightY = 0.0f, lightZ = 0.0f, lightAmbX = 0.0f, lightAmbY = 0.0f, lightAmbZ = 0.0f, lightDifX = 0.0f, lightDifY = 0.0f, lightDifZ = 0.0f, lightSpecX = 0.0f, lightSpecY = 0.0f, lightSpecZ = 0.0f, bgColorR = 1.0f, bgColorG = 1.0f, bgColorB = 1.0f, coefSpec = 32.0f;
 
 	vector<string> split(const string& str, const string& delim)
 	{
@@ -61,6 +61,8 @@ public:
 						this->setLightDif(stof(tokens[1]), stof(tokens[2]), stof(tokens[3]));
 					else if (tokens[0] == "lightspec") // Specular light intensity
 						this->setLightSpec(stof(tokens[1]), stof(tokens[2]), stof(tokens[3]));
+					else if (tokens[0] == "coefspec") // Specular coefficient
+						this->setCoefSpec(stof(tokens[1]));
 					else if (tokens[0] == "bgcolor") // Background color
 						this->setBgColor(stof(tokens[1]), stof(tokens[2]), stof(tokens[3]));
 
@@ -88,16 +90,8 @@ public:
 		this->camZ = z;
 	}
 
-	float getCamX() {
-		return this->camX;
-	}
-
-	float getCamY() {
-		return this->camY;
-	}
-
-	float getCamZ() {
-		return this->camZ;
+	glm::vec3 getCamPos() {
+		return glm::vec3(camX, camY, camZ);
 	}
 
 	void setLightPos(float x, float y, float z) {
@@ -176,6 +170,14 @@ public:
 
 	float getLightSpecZ() {
 		return this->lightSpecZ;
+	}
+
+	void setCoefSpec(float coef) {
+		this->coefSpec = coef;
+	}
+
+	float getCoefSpec() {
+		return this->coefSpec;
 	}
 
 	float getBgColorR() {

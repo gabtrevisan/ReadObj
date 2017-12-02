@@ -6,9 +6,10 @@ obj XY_PikachuF.obj
 pos 1.0 -1.8 0.0
 scale 2.5
 rot y -1.0
-cam 0.0 0.0 -5.0
+cam 0.0 0.0 4.5
 lightpos 1.0 1.0 2.0
 lightspec 1.0 1.0 1.0
 lightdif 0.8 0.8 0.8
-lightamb 0.7 0.7 0.7
+lightamb 0.8 0.8 0.8
+coefspec 32.0
 bgcolor 0.7 0.85 1.0
