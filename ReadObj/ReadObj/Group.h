@@ -16,7 +16,8 @@ public:
 	vector<float> textures;
 
 	Group() {
-		Material material = Material();
+		this->material = Material();
+		
 	}
 
 	Group(Material material) {

@@ -62,7 +62,7 @@ int main()
 	glfwInit();
 
 	// Create a GLFWwindow object that we can use for GLFW's functions
-	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "LearnOpenGL", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "ReadObj", nullptr, nullptr);
 	glfwMakeContextCurrent(window);
 
 	// Set the required callback functions
@@ -128,6 +128,7 @@ int main()
 
 	GLuint vVBO, nVBO, tVBO;
 	GLuint* VAO = new GLuint[numVAOs];
+	GLuint* textures = new GLuint[numVAOs];
 	int v = 0;
 	for (int i = 0; i < scene.getObjects().size(); i++)
 	{
@@ -172,6 +173,11 @@ int main()
 				glBindBuffer(GL_ARRAY_BUFFER, tVBO);
 				glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), NULL);
 				glEnableVertexAttribArray(2);
+				string texturePath = "../objs/" + obj.getGroups()->at(i).material.getMapKd();
+				int texture = LoadTexture(texturePath.c_str());
+				textures[v] = texture;
+			} else {
+				textures[v] = 0;
 			}
 
 			v++;
@@ -271,9 +277,7 @@ int main()
 
 			for (int i = 0; i < obj.getGroups()->size(); i++) {
 				if (obj.getGroups()->at(i).indicesVT.size() > 0) {
-					texturePath = "../objs/" + obj.getGroups()->at(i).material.getMapKd();
-					texture = LoadTexture(texturePath.c_str());
-					glBindTexture(GL_TEXTURE_2D, texture);
+					glBindTexture(GL_TEXTURE_2D, textures[v]);
 				}
 
 				if (obj.getGroups()->at(i).material.getName() != "") {
