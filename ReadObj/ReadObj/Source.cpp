@@ -197,6 +197,8 @@ int main()
 	GLuint texture;
 	string texturePath;
 
+	float t = 0.0f;
+	int lastAnimation = 0;
 
 	// Game loop
 	while (!glfwWindowShouldClose(window))
@@ -267,9 +269,26 @@ int main()
 			x = object.getX();
 			y = object.getY();
 			z = object.getZ();
-		
+
+			if (object.getAnimation()->curves.size() > 0) {
+				t += 0.01;
+				if (t > 1.0f) {
+					t = 0.0f;
+					lastAnimation++;
+					if (lastAnimation >= object.getAnimation()->curves.size())
+						lastAnimation = 0;
+				}
+				
+				glm::vec2 p = object.getAnimation()->curves.at(lastAnimation).calc(t);
+
+				posX = p.x;
+				posY = p.y;
+			}
+
 			// calculate the model matrix for each object and pass it to shader before drawing
+
 			glm::mat4 model;
+
 			model = glm::translate(model, glm::vec3(posX, posY, posZ));
 			model = glm::rotate(model, rot, glm::vec3(x, y, z));
 			model = glm::scale(model, glm::vec3(scl));

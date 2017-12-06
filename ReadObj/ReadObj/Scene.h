@@ -51,6 +51,8 @@ public:
 						objects[objects.size() - 1].setScale(stof(tokens[1]));
 					else if (tokens[0] == "rot") // Obj rotation
 						objects[objects.size() - 1].setRot(tokens[1], stof(tokens[2]));
+					else if (tokens[0] == "anim") // Obj animation						
+						objects[objects.size() - 1].getAnimation()->addCurve(BezierCurve(glm::vec2(stof(tokens[1]), stof(tokens[2])), glm::vec2(stof(tokens[3]), stof(tokens[4])), glm::vec2(stof(tokens[5]), stof(tokens[6])), glm::vec2(stof(tokens[7]), stof(tokens[8]))));
 					else if (tokens[0] == "cam") // Initial camera position
 						this->setCamPos(stof(tokens[1]), stof(tokens[2]), stof(tokens[3]));
 					else if (tokens[0] == "lightpos") // Light position

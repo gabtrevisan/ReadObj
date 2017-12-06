@@ -148,6 +148,8 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="BezierCurve.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Group.h" />
     <ClInclude Include="Material.h" />

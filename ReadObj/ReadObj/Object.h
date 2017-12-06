@@ -1,10 +1,12 @@
 #include "Obj.h"
+#include "Animation.h"
 
 class Object
 {
 private:
 	Obj obj;
 	float posX, posY, posZ, rot, scale;
+	Animation anim;
 	int x, y, z;
 
 public:
@@ -16,6 +18,7 @@ public:
 		this->posZ = 0.0f;
 		this->rot = 0.0f;
 		this->scale = 1.0f;
+		this->anim = Animation();
 		this->x = 1;
 		this->y = 0;
 		this->z = 0;
@@ -92,5 +95,9 @@ public:
 
 	int getZ() {
 		return this->z;
+	}
+
+	Animation* getAnimation() {
+		return &(this->anim);
 	}
 };

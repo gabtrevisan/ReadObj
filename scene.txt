@@ -10,7 +10,9 @@ obj Pokeball.obj
 pos 0.0 1.0 0.0
 rot y -1.0
 scale 0.3
-cam 0.0 0.0 4.5
+anim -2.0 1.5 -2.0 2.0 2.0 2.0 2.0 1.5
+anim 2.0 1.5 2.0 0.5 -2.0 0.5 -2.0 1.5
+cam 0.0 0.0 5.5
 lightpos 1.0 1.0 2.0
 lightspec 1.0 1.0 1.0
 lightdif 0.8 0.8 0.8
